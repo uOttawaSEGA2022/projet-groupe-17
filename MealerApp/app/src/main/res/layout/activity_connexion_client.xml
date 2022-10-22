@@ -37,7 +37,7 @@
         android:visibility="invisible" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/username1"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -47,7 +47,7 @@
         android:textSize="12sp" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/password1"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
