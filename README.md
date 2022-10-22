@@ -1,6 +1,8 @@
 SEG 2505 
 
 Informations d'identification pour se connecter en tant qu'Administrateur
+
+
 Option 1:
 Nom d'utilisateur: Admin1
 Mot de passe Password1
