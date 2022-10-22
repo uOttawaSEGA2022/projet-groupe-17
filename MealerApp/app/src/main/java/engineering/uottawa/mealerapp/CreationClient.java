@@ -13,6 +13,10 @@ public class CreationClient extends AppCompatActivity {
     Button connectCrCl;
     EditText username;
     EditText password;
+    EditText prenom;
+    EditText nom;
+    EditText adresse;
+    EditText carte;
     dbHelper DB;
 
     @Override
@@ -24,16 +28,33 @@ public class CreationClient extends AppCompatActivity {
         username=(EditText)findViewById(R.id.courrielclient);
         password=(EditText)findViewById(R.id.passwordclient);
         DB = new dbHelper(this);
+        prenom=(EditText)findViewById(R.id.prenomclient);
+        nom=(EditText)findViewById(R.id.nomclient);
+        adresse=(EditText)findViewById(R.id.adresseclient);
+        carte=(EditText)findViewById(R.id.carte);
 
         connectCrCl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String user = username.getText().toString();
                 String pass = password.getText().toString();
-                String role = "client";
+                String prnom = prenom.getText().toString();
+                String nomm = nom.getText().toString();
+                String adress = adresse.getText().toString();
+                String cart = carte.getText().toString();
 
-                if(user.equals("")||pass.equals(""))
-                    Toast.makeText(CreationClient.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+                if(prnom.equals(""))
+                    Toast.makeText(CreationClient.this, "Please enter your name", Toast.LENGTH_SHORT).show();
+                else if(nomm.equals(""))
+                    Toast.makeText(CreationClient.this, "Please enter your last name", Toast.LENGTH_SHORT).show();
+                else if(user.equals(""))
+                    Toast.makeText(CreationClient.this, "Please enter your email", Toast.LENGTH_SHORT).show();
+                else if(pass.equals(""))
+                    Toast.makeText(CreationClient.this, "Please enter a password", Toast.LENGTH_SHORT).show();
+                else if(adress.equals(""))
+                    Toast.makeText(CreationClient.this, "Please enter an address", Toast.LENGTH_SHORT).show();
+                else if(cart.equals(""))
+                    Toast.makeText(CreationClient.this, "Please enter your card number", Toast.LENGTH_SHORT).show();
 
                 else {
                     Boolean insert = DB.insertData(user, pass);

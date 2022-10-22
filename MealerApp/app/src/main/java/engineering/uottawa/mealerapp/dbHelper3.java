@@ -12,9 +12,9 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 
 public class dbHelper3 extends SQLiteOpenHelper {
-    public static final String DBNAME = "Login3.db";
+    public static final String DBNAME = "Login4.db";
     public dbHelper3(Context context) {
-        super(context, "Login2.db", null, 1);
+        super(context, "Login4.db", null, 1);
     }
 
     @Override
