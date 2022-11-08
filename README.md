@@ -14,3 +14,6 @@ Mot de passe: Password2
 Option 3:
 Nom d'utilisateur: Admin3
 Mot de passe: Password3
+
+
+https://www.npackd.org/p/android-studio/2.3.1
