@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,6 +19,9 @@ public class AjoutDeRepas extends AppCompatActivity {
     EditText Allergenes;
     EditText Prix;
     EditText Description ;
+    private String name;
+    private String price;
+    private String descrip;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -34,12 +38,20 @@ public class AjoutDeRepas extends AppCompatActivity {
         AjoutRepas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name = AjoutRepas.getText().toString();
-                String price = Prix.getText().toString();
-                String descrip = Description.getText().toString();
+                name = AjoutRepas.getText().toString();
+                price = Prix.getText().toString();
+                descrip = Description.getText().toString();
         }
         });
 
+        if( name.equals(""))
+            Toast.makeText(AjoutDeRepas.this, "Please enter the name", Toast.LENGTH_SHORT).show();
+        else if(price.equals(""))
+            Toast.makeText(AjoutDeRepas.this, "Please enter the price", Toast.LENGTH_SHORT).show();
+        else if(descrip.equals(""))
+            Toast.makeText(AjoutDeRepas.this, "Please enter your the description", Toast.LENGTH_SHORT).show();
+        else{
 
+        }
     }
 }

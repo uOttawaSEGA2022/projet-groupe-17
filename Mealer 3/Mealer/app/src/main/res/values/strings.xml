@@ -42,4 +42,14 @@
     <string name="ajout_de_repas">Ajout de repas</string>
     <string name="nom_du_repas">Nom du repas</string>
     <string name="ajouter">Ajouter</string>
+    <string name="allerg_nes">Allergènes</string>
+    <string name="description">Description</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="prix">Prix</string>
+    <string name="type_de_repas">Type de repas</string>
+    <string name="entr_e">Entrée</string>
+    <string name="plat_principal">Plat principal</string>
+    <string name="app_ritif">Appéritif</string>
+    <string name="soupe">Soupe</string>
+    <string name="dessert">Dessert</string>
 </resources>

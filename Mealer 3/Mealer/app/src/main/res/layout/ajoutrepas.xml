@@ -9,27 +9,38 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="160dp"
         android:text="@string/ajout_de_repas"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="53dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/nomRepas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="75dp"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:text="@string/nom_du_repas"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="147dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <MultiAutoCompleteTextView
         android:id="@+id/multiAutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ingredients"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="358dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:minHeight="48dp"
+        android:text="@string/ingredients"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip16" />
 
     <Button
         android:id="@+id/ajoutplatbutton"
@@ -45,31 +56,53 @@
         android:id="@+id/descriptionPlat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
-        android:text="Description"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="550dp" />
+        android:minHeight="48dp"
+        android:text="@string/description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prix" />
 
     <EditText
         android:id="@+id/allergenes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:gravity="start|top"
+        android:importantForAutofill="no"
         android:inputType="textMultiLine"
-        android:text="Allergènes"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="437dp" />
+        android:minHeight="48dp"
+        android:text="@string/allerg_nes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextView" />
 
     <EditText
         android:id="@+id/prix"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:text="Prix"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="493dp" />
+        android:minHeight="48dp"
+        android:text="@string/prix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/allergenes" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Type de cuisine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomRepas" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
