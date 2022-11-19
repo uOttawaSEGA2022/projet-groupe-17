@@ -145,6 +145,6 @@ public class MenuCuisinier extends AppCompatActivity {
         db = new dbMenu(this);
         db.insertData(user, "testing", "dessert", "mexicain", "sucre", "aucun", 10.3, "cest bon");
         result=db.delete("testing");
-        return true;
+        return result;
     }
 }
