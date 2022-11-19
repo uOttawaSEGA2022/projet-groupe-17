@@ -62,7 +62,7 @@ public class CreationCuisinier extends AppCompatActivity {
                     Toast.makeText(CreationCuisinier.this, "Please enter a description", Toast.LENGTH_SHORT).show();
 
                 else {
-                    Boolean insert = DB.insertData(user, pass);
+                    Boolean insert = DB.insertData(user, pass, prnom, nomm, adress, description);
                     if (insert == true) {
                         Toast.makeText(CreationCuisinier.this, "Registered successfully", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), Cuisinier.class);

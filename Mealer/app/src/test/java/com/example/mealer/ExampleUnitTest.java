@@ -1,8 +1,13 @@
 package com.example.mealer;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
+
+import android.view.Menu;
+import static org.junit.Assert.*;
+
 
 /**
  * Example local unit test, which will execute on the development machine (host).

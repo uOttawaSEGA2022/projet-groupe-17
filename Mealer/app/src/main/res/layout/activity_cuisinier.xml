@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
         android:text="Bienvenue!"
         android:textSize="30sp" />
 
@@ -34,12 +34,62 @@
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 
+    <TextView
+        android:id="@+id/suspendu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Vous avez été suspendu"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="indéfiniment"
+        android:visibility="gone"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="Vous avez été suspendu indéfiniment"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="Menu"
+        android:visibility="visible"
+        android:textColor="@android:color/holo_red_dark" />
+    <Button
+        android:id="@+id/offert"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Repas offerts"
+        android:visibility="visible"
+        android:textColor="@android:color/holo_red_dark" />
+
     <Button
         android:id="@+id/deconnexionC"
         android:layout_width="275dp"
         android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:text="Déconnection"
         android:textColor="@android:color/holo_red_dark" />
 

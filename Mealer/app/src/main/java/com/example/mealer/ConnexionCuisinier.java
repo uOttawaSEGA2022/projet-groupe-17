@@ -26,6 +26,7 @@ public class ConnexionCuisinier extends AppCompatActivity {
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
         DB = new dbHelper2(this);
+        DB.insertData("la", "la");
 
         connectCC.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,16 +50,24 @@ public class ConnexionCuisinier extends AppCompatActivity {
                     if(checkuserpass==true){
                         Toast.makeText(ConnexionCuisinier.this, "Sign in successfull", Toast.LENGTH_SHORT).show();
                         Intent intent  = new Intent(getApplicationContext(), Cuisinier.class);
+                        intent.putExtra("key",user);
                         startActivity(intent);
                     }else if(checksuspend==true){
                         Cursor res=DB.getdate(user);
                         if (res.getCount()!=0){
                             if(res.moveToNext()){
-                                String date=res.getString(3);
-                                if (date.equals(""))
+                                String date=res.getString(7);
+                                if (date.equals("")){
                                     Toast.makeText(ConnexionCuisinier.this, "Vous avez été suspendu indefiniment", Toast.LENGTH_LONG).show();
+                                    Intent intent  = new Intent(getApplicationContext(), Cuisinier.class);
+                                    intent.putExtra("key","indéfiniment");
+                                    startActivity(intent);
+                                }
                                 else{
                                     Toast.makeText(ConnexionCuisinier.this, "Vous avez été suspendu juasqu'au "+date, Toast.LENGTH_LONG).show();
+                                    Intent intent  = new Intent(getApplicationContext(), Cuisinier.class);
+                                    intent.putExtra("key","jusqu'au "+date);
+                                    startActivity(intent);
                                 }
                             }
                         }

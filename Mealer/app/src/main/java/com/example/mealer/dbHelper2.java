@@ -13,16 +13,16 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 
 public class dbHelper2 extends SQLiteOpenHelper {
-    public static final String DBNAME = "Login5.db";
+    public static final String DBNAME = "cuisinier.db";
     //public boolean suspended;
     //public String endDate;
     public dbHelper2(Context context) {
-        super(context, "Login5.db", null, 1);
+        super(context, DBNAME, null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase DB) {
-        DB.execSQL("create Table users(username TEXT primary key, password TEXT, suspended TEXT, date TEXT, traite TEXT)");
+        DB.execSQL("create Table users(username TEXT primary key, password TEXT, name TEXT, lastName TEXT, address TEXT, description TEXT, suspended TEXT, date TEXT, traite TEXT)");
 
     }
 
@@ -66,6 +66,26 @@ public class dbHelper2 extends SQLiteOpenHelper {
         DB.update("users", contentValues, "username = ?", new String[] {username});
     }
 
+
+    public Boolean insertData(String username, String password, String name, String lastName, String address, String description) {
+
+        SQLiteDatabase DB = this.getWritableDatabase();
+        ContentValues contentValues= new ContentValues();
+        contentValues.put("username", username);
+        contentValues.put("password", password);
+        contentValues.put("name", name);
+        contentValues.put("lastName", lastName);
+        contentValues.put("address", address);
+        contentValues.put("description", description);
+        contentValues.put("suspended", "0");
+        contentValues.put("date", "");
+        contentValues.put("traite", "0");
+        //contentValues.put("role", role);
+        long result = DB.insert("users", null, contentValues);
+        if(result==-1) return false;
+        else
+            return true;
+    }
 
     public Boolean insertData(String username, String password) {
 
