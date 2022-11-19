@@ -138,12 +138,4 @@ public class MenuCuisinier extends AppCompatActivity {
         ArrayAdapter arrayAdapter=new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayList);
         liste.setAdapter(arrayAdapter);
     }
-
-    public Boolean addAndDelete(){
-        boolean result=false;
-        db = new dbMenu(this);
-        db.insertData(user, "testing", "dessert", "mexicain", "sucre", "aucun", 10.3, "cest bon");
-        result=db.delete("testing");
-        return result;
-    }
 }
