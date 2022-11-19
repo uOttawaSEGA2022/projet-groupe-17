@@ -60,10 +60,9 @@ public class MenuCuisinier extends AppCompatActivity {
             }
         });
 
-        liste.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+        liste.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 offrir.setVisibility(View.VISIBLE);
                 cesser.setVisibility(View.VISIBLE);
                 supp.setVisibility(View.VISIBLE);
@@ -98,7 +97,7 @@ public class MenuCuisinier extends AppCompatActivity {
                         offrir.setVisibility(View.GONE);
                         cesser.setVisibility(View.GONE);                    }
                 });
-                return true;
+
             }
         });
 
