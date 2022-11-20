@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_light"
     android:orientation="vertical"
-    tools:context=".Connexion">
+    tools:context=".Creation">
 
 
     <TextView
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="20dp"
         android:text="MEALER"
         android:textColor="?android:attr/statusBarColor"
         android:textSize="50sp"
@@ -36,29 +36,23 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:text="Veuillez sélectionner votre rôle utilisateur" />
+        android:text="Veuillez sélectionner votre rôle " />
 
     <Button
-        android:id="@+id/client"
+        android:id="@+id/clientCreate"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:text="Client" />
 
     <Button
-        android:id="@+id/cuisinier"
+        android:id="@+id/cuisinierCreate"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
         android:text="Cuisinier" />
 
-    <Button
-        android:id="@+id/adminButton"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:text="Administrateur" />
+
 </LinearLayout>

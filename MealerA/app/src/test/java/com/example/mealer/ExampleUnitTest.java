@@ -1,5 +1,6 @@
 package com.example.mealer;
 
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -10,10 +11,6 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class ExampleUnitTest {
-    @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
-    }
 
     @Test
     public void valid_inputsverification_repas(){

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_light"
     android:orientation="vertical"
-    tools:context=".Connexion">
+    tools:context=".MainActivity">
 
 
     <TextView
@@ -14,9 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:text="Bienvenue à "
-        android:visibility="invisible" />
+        android:layout_marginTop="80dp"
+        android:text="Bienvenue à " />
 
     <TextView
         android:id="@+id/mealer"
@@ -27,38 +26,22 @@
         android:layout_marginTop="0dp"
         android:text="MEALER"
         android:textColor="?android:attr/statusBarColor"
-        android:textSize="50sp"
-        android:visibility="visible" />
-
-    <TextView
-        android:id="@+id/signIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:text="Veuillez sélectionner votre rôle utilisateur" />
+        android:textSize="80dp" />
 
     <Button
-        android:id="@+id/client"
+        android:id="@+id/connection1"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:text="Client" />
+        android:layout_marginTop="50dp"
+        android:text="connexion" />
 
     <Button
-        android:id="@+id/cuisinier"
+        android:id="@+id/creatAccount"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:text="Cuisinier" />
+        android:layout_marginTop="25dp"
+        android:text="Ouvrir un compte" />
 
-    <Button
-        android:id="@+id/adminButton"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:text="Administrateur" />
 </LinearLayout>
