@@ -33,6 +33,14 @@
         android:text="Client"
         android:textColor="@android:color/black"
         android:textSize="18sp" />
+    <Button
+        android:id="@+id/rechercherRepas"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="Rechercher un repas"
+        android:textColor="@android:color/black" />
 
     <Button
         android:id="@+id/deconnexionCl"
