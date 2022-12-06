@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="100dp"
-        android:text="Bienvenue!"
+        android:text="@string/bienvenue"
         android:textSize="30sp" />
 
     <TextView
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
-        android:text="Vous êtes connecté en tant que"
+        android:text="@string/vous_tes_connect_en_tant_que"
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:text="Cuisinier"
+        android:text="@string/cuisinier"
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
-        android:text="Vous avez été suspendu"
+        android:text="@string/vous_avez_t_suspendu"
         android:textColor="@android:color/holo_red_dark"
         android:visibility="gone"
         android:textSize="20sp" />
@@ -50,17 +50,23 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:text="indéfiniment"
+        android:text="@string/ind_finiment"
         android:visibility="gone"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="60dp"
-        android:text="Vous avez été suspendu indéfiniment"
+        android:text="@string/vous_avez_t_suspendu_ind_finiment"
         android:textColor="@android:color/holo_red_dark"
         android:visibility="gone"
         android:textSize="18sp" />
@@ -68,29 +74,30 @@
     <Button
         android:id="@+id/menu"
         android:layout_width="275dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="100dp"
         android:text="Menu"
-        android:visibility="visible"
-        android:textColor="@android:color/holo_red_dark" />
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="visible" />
+
     <Button
         android:id="@+id/offert"
         android:layout_width="275dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:text="Repas offerts"
-        android:visibility="visible"
-        android:textColor="@android:color/holo_red_dark" />
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="visible" />
 
     <Button
         android:id="@+id/deconnexionC"
         android:layout_width="275dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:text="Déconnection"
-        android:textColor="@android:color/holo_red_dark" />
+        android:textColor="#D7CCC8" />
 
 </LinearLayout>

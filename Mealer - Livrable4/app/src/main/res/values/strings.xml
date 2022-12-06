@@ -10,4 +10,11 @@
     <string name="_1_mauvais_service">1- Mauvais service</string>
     <string name="evaluation_cuisinier">Evaluation Cuisinier</string>
     <string name="retour">Retour</string>
+    <string name="bienvenue">Bienvenue!</string>
+    <string name="vous_tes_connect_en_tant_que">Vous êtes connecté en tant que</string>
+    <string name="cuisinier">Cuisinier</string>
+    <string name="vous_avez_t_suspendu">Vous avez été suspendu</string>
+    <string name="ind_finiment">indéfiniment</string>
+    <string name="vous_avez_t_suspendu_ind_finiment">Vous avez été suspendu indéfiniment</string>
+    <string name="information_cuisinier">Information cuisinier</string>
 </resources>
