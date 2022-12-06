@@ -32,7 +32,7 @@ public class Client extends AppCompatActivity {
         searchMeal.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(), RechercherRepas.class);
+                Intent intent=new Intent(getApplicationContext(), SearchMealItem.class);
                 startActivity(intent);
             }
 

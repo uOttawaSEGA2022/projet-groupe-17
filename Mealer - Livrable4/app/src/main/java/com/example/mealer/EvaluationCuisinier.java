@@ -12,9 +12,5 @@ import java.util.ArrayList;
 public class EvaluationCuisinier extends AppCompatActivity {
     ListView list;
     dbHelper2 DB;
-    int pos;
-    Button ouiS, nonS, ok, indefinit;
-    TextView suspendre;
-    ArrayList<String> array;
-    EditText limite;
+
 }

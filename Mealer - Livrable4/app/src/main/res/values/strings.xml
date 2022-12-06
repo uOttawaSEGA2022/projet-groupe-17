@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Mealer</string>
+    <string name="evaluation_client">Evaluation Client</string>
+    <string name="pouvez_vous_nous_dire_pourquoi">Pouvez vous nous dire pourquoi ?</string>
+    <string name="_4_bon">4 - Bon</string>
+    <string name="_3_correct">3- Correct</string>
+    <string name="_2_passable">2- Passable</string>
+    <string name="veuillez_chosir_une_note_entre_1_et_5">Veuillez chosir une note entre 1 et 5</string>
+    <string name="_5_excellent">5 - Excellent</string>
+    <string name="_1_mauvais_service">1- Mauvais service</string>
+    <string name="evaluation_cuisinier">Evaluation Cuisinier</string>
+    <string name="retour">Retour</string>
 </resources>
