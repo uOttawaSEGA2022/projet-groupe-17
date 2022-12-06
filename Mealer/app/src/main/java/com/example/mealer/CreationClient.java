@@ -66,6 +66,7 @@ public class CreationClient extends AppCompatActivity {
                     if (insert == true) {
                         Toast.makeText(CreationClient.this, "Registered successfully", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), Client.class);
+                        intent.putExtra("key",user);
                         startActivity(intent);
                     } else {
                         Toast.makeText(CreationClient.this, "Registration failed", Toast.LENGTH_SHORT).show();

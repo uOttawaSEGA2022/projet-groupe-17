@@ -66,6 +66,7 @@ public class CreationCuisinier extends AppCompatActivity {
                     if (insert == true) {
                         Toast.makeText(CreationCuisinier.this, "Registered successfully", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), Cuisinier.class);
+                        intent.putExtra("key",user);
                         startActivity(intent);
                     } else {
                         Toast.makeText(CreationCuisinier.this, "Registration failed", Toast.LENGTH_SHORT).show();
