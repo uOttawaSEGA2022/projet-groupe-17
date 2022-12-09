@@ -29,3 +29,12 @@ Nom d'utilisateur 4: joe@gmail.com Mot de passe: joe
 Nom d'utilisateur 5: sophie@gmail.com Mot de passe: sophie
 
 Nom d'utilisateur 6: amelia@gmail.com Mot de passe: amelia
+
+---------------------------------------------------------------------
+
+LECONS APPRIS ZEYNEP
+- Comment travailler en équipe
+- Gestion de temps
+- Communiquer efficacement
+- Fixer des objectifs réalistes
+- Demander de l'aide
