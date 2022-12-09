@@ -38,3 +38,9 @@ LECONS APPRIS ZEYNEP
 - Communiquer efficacement
 - Fixer des objectifs réalistes
 - Demander de l'aide
+
+--------------------------------------------------------------------
+Lecons apprise par Sarah
+- Découverte d'android studio
+- apprendre à structurer son travail dans un travail d'equipe
+- gestion du temps et des ressources 
