@@ -41,3 +41,12 @@ Leçons apprises par Nathan
 - Résoudre des problèmes comme un ingénieur logiciel
 - Gestion du temps
 - Découverte des nombreuses fonctions de GITHUB
+---------------------------------------------------------------------
+Leçons assimilées: (MOHAMED)
+- se familiariser a android studio
+- apprendre le travail d'equipe
+- mieux exploiter Git hub 
+- connaitre mes lacunes
+- reflechir en tant qu'un ingenieur logiciel
+- respecter le temps dont je dispose
+- être beaucoup plus méticuleux
