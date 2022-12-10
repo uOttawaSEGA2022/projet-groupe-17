@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorButtonNormal"
+    android:baselineAligned="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Repas">
+
+    <TextView
+        android:id="@+id/adminIden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Cuisinier"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/identification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="CREATION DE REPAS"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/mauvaiseEntree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mauvaises entrées. Veuillez réessayer."
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nom du repas"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/type"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Type de repas (ex. plat principal, soupe, dessert, etc.)"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/cuisine"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Type de cuisine (ex. italienne, chinoise, grecque, etc.)"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/ingrédients"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Ingrédients"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/allergenes"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Allergènes"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/prix"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Prix"
+        android:inputType="numberDecimal"
+        android:textSize="11sp" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Description du plat"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/ajouter"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Ajouter" />
+    <Button
+        android:id="@+id/annuler"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:text="Annuler" />
+
+</LinearLayout>
