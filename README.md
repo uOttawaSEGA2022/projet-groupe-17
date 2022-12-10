@@ -1,5 +1,7 @@
 SEG 2505 
 
+LIVRABLE 4: nous avons également implémenté le BONUS 
+
 Informations d'identification pour se connecter en tant qu'Administrateur
 
 
