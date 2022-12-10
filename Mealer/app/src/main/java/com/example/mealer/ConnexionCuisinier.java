@@ -31,7 +31,7 @@ public class ConnexionCuisinier extends AppCompatActivity {
         connectCC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String cuis1="lila@gmail.com", cuis2="mark@gmail.com", cuis3="George@gmail.com", cuis4="joe@gmail.com",cuis5="sophie@gmail.com", cuis6="amelia@gmail.com", cuis7="adam@gmail.com";
+                String cuis1="lila", cuis2="mark", cuis3="George", cuis4="joe",cuis5="sophie", cuis6="amelia", cuis7="adam";
                 DB.insertData(cuis1, "lila");
                 DB.insertData(cuis2, "mark");
                 DB.insertData(cuis3, "george");
