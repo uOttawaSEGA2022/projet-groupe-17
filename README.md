@@ -1,6 +1,8 @@
 SEG 2505 
 
--------LIVRABLE 4: nous avons également implémenté le BONUS---------
+-------LIVRABLE 4: nous avons également implémenté le BONUS (notification du client)---------
+
+Fonctionnement de la note d'un cuisinier: chaque cuisinier commence avec une note de 5/5. Losrqu'il recoit sa premiere evaluation, sa note devient egale a l'evaluation. Par la suite, lorsque le cuisinier acquiert plus d'une evaluation, alors sa note correspond a la moyenne de toutes les notes recues (sans le 5/5 initial).
 
 Informations d'identification pour se connecter en tant qu'Administrateur
 
