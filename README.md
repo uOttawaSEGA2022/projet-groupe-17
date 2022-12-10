@@ -33,3 +33,11 @@ Lecons apprise par Sarah
 - Découverte d'android studio
 - apprendre à structurer son travail dans un travail d'equipe
 - gestion du temps et des ressources 
+
+---------------------------------------------------------------------
+Leçons apprises par Nathan
+- L'esprit d'équipe
+- Apprentissage d'android studio
+- Résoudre des problèmes comme un ingénieur logiciel
+- Gestion du temps
+- Découverte des nombreuses fonctions de GITHUB
